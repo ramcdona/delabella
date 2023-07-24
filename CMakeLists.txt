@@ -11,6 +11,7 @@ add_library(delabella::delabella ALIAS delabella)
 
 
 set_target_properties( ${PROJECT_NAME} PROPERTIES CXX_STANDARD 17 )
+set_target_properties( ${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON )
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     set_target_properties( ${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "-ffp-model=strict -ffp-contract=off -mfma")
