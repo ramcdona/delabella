@@ -34,6 +34,8 @@ uint64_t sorting_bench = 0;
 #ifdef _WIN32
 #define NOMINMAX
 #include <windows.h>
+#else
+#include <time.h>
 #endif
 
 static uint64_t uSec()
